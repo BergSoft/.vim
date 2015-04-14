@@ -348,8 +348,8 @@ command! -bang WQ wq<bang>
 
 " Local settings
 " ================
-if filereadable($HOME . "/.vim_local")
-    source $HOME/.vim_local
+if filereadable($HOME . "/.vim_local.vim")
+    source $HOME/.vim_local.vim
 endif
 
 
