@@ -151,6 +151,9 @@
     " Visual mode {{{
     " ---------------
 
+        "выключить подсветку: повесить на горячую клавишу Ctrl-F8"
+        nnoremap <C-F8> :nohlsearch<CR>
+
         " Copy selected to command line
         vnoremap ! y:<C-r>"<C-b>
 

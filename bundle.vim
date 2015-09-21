@@ -52,6 +52,9 @@ let s:darwin = has('mac')
         \ 'lazy': 1,
         \ 'autoload': {'commands': ['GHDashboard', 'GHActivity']}}
 
+    " a Mercurial wrapper for hg repos
+    NeoBundle 'ludovicchabant/vim-lawrencium'
+
 " }}}
 
 
