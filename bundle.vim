@@ -11,6 +11,7 @@ let s:darwin = has('mac')
         \     'windows' : 'make -f make_mingw32.mak',
         \     'cygwin' : 'make -f make_cygwin.mak',
         \     'mac' : 'make -f make_mac.mak',
+        \     'linux' : 'make',
         \     'unix' : 'make -f make_unix.mak',
         \    },
         \ }
@@ -136,13 +137,14 @@ let s:darwin = has('mac')
 " ===============
 
     " lean & mean statusline for vim that's light as air
-    NeoBundle 'bling/vim-airline'
+    NeoBundle 'vim-airline/vim-airline'
 
     let g:airline_detect_iminsert = 1
     let g:airline_left_sep = ''
     let g:airline_right_sep = ''
     let g:airline_theme = 'wombat'
 
+    NeoBundle 'vim-airline/vim-airline-themes' 
 " }}}
 
 
